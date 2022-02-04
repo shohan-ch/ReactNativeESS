@@ -12,6 +12,7 @@ import AppView from "./src/components/View";
 import Home from "./src/components/Home";
 import AppFlatList from "./src/components/AppFlatList";
 import AppImage from "./src/components/AppImage";
+import AppKeyBoardAvoiding from "./src/components/KeyboardAvoidingView";
 // import { ScrollView } from "react-native-web";
 // import { TextInput } from "react-native-web";
 
@@ -22,13 +23,14 @@ export default function App() {
       <AppImage />
       <AppView />
       <AppFlatList />
+      <AppKeyBoardAvoiding />
 
       <View
         style={{
           paddingHorizontal: 20,
           // paddingBottom: 40,
           backgroundColor: "#f194ff",
-          marginBottom: 20,
+          marginBottom: 100,
         }}
       >
         <Text style={{ color: "#fff" }}>Write something</Text>
@@ -53,5 +55,6 @@ const styles = StyleSheet.create({
     color: "white",
     paddingHorizontal: 20,
     paddingTop: 60,
+    paddingBottom: 70,
   },
 });
