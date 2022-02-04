@@ -6,18 +6,29 @@ export default () => {
   return (
     <>
       <ImageBackground
-        source={{ uri: "https://reactjs.org/logo-og.png" }}
+        source={{
+          uri: "https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        }}
+        // source={require("../assets/tiny_logo.png")}
         resizeMode="cover"
-        style={{ width: 500, height: 500 }}
+        style={{ width: 500, height: 250 }}
       >
-        <Image
-          // source={require("../assets/tiny_logo.png")}
-          source={{
-            uri: img != null && img,
+        <Text
+          style={{
+            fontSize: 30,
+            backgroundColor: "coral",
+            textAlign: "center",
+            fontWeight: "bold",
           }}
+        >
+          Hello text
+        </Text>
+        <Image
+          source={require("../assets/tiny_logo.png")}
+          // source={{
+          //   uri: "https://reactnative.dev/img/tiny_logo.png",
+          // }}
           style={{ width: 100, height: 100 }}
-          accessibilityLabel="Image"
-          fadeDuration={500}
         />
       </ImageBackground>
     </>
