@@ -13,6 +13,7 @@ import Home from "./src/components/Home";
 import AppFlatList from "./src/components/AppFlatList";
 import AppImage from "./src/components/AppImage";
 import AppKeyBoardAvoiding from "./src/components/KeyboardAvoidingView";
+import AppModal from "./src/components/AppModal";
 // import { ScrollView } from "react-native-web";
 // import { TextInput } from "react-native-web";
 
@@ -21,6 +22,7 @@ export default function App() {
   return (
     <ScrollView style={styles.container}>
       <AppImage />
+      <AppModal />
       <AppView />
       <AppFlatList />
       <AppKeyBoardAvoiding />

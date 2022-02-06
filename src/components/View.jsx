@@ -27,9 +27,9 @@ const AppButton = () => (
       borderWidth: 2,
       borderColor: "thistle",
       padding: 10,
-      marginBottom: 50,
+      marginBottom: 20,
       paddingVertical: 20,
-      marginTop: 80,
+      marginTop: 20,
     }}
   >
     <Text>
