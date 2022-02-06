@@ -32,9 +32,12 @@ const Item = ({ title }) => (
 export default () => {
   const renderItem = ({ item }) => <Item title={item.title} />;
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ paddingHorizontal: 20 }}>
+      <Text style={{ backgroundColor: "coral", color: "#fff", padding: 10 }}>
+        Flat List
+      </Text>
       <FlatList
-        style={{ marginVertical: 10, paddingHorizontal: 20 }}
+        style={{ marginVertical: 10 }}
         data={DATA}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}

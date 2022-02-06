@@ -15,11 +15,11 @@ import AppImage from "./src/components/AppImage";
 import AppKeyBoardAvoiding from "./src/components/KeyboardAvoidingView";
 import AppModal from "./src/components/AppModal";
 import AppPressable from "./src/components/Pressable";
+import AppTextInput from "./src/components/AppTextInput";
 // import { ScrollView } from "react-native-web";
 // import { TextInput } from "react-native-web";
 
 export default function App() {
-  const [text, setText] = useState("write");
   return (
     <ScrollView style={styles.container}>
       <AppImage />
@@ -28,24 +28,7 @@ export default function App() {
       <AppView />
       <AppFlatList />
       <AppKeyBoardAvoiding />
-
-      <View
-        style={{
-          paddingHorizontal: 20,
-          // paddingBottom: 40,
-          backgroundColor: "#f194ff",
-          marginBottom: 100,
-        }}
-      >
-        <Text style={{ color: "#fff" }}>Write something</Text>
-        <Home />
-        <TextInput
-          placeholder="Type anything"
-          onChangeText={(text) => setText(text)}
-        />
-        <StatusBar style="auto" />
-        <Text>{text}</Text>
-      </View>
+      <AppTextInput />
     </ScrollView>
   );
 }
@@ -53,12 +36,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     // flex: 1,
-    backgroundColor: "teal",
     // alignItems: "center",
     // justifyContent: "center",
+    backgroundColor: "teal",
     color: "white",
     paddingHorizontal: 20,
     paddingTop: 60,
-    paddingBottom: 70,
+    // paddingBottom: 70,
   },
 });
