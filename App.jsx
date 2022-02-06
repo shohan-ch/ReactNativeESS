@@ -14,6 +14,7 @@ import AppFlatList from "./src/components/AppFlatList";
 import AppImage from "./src/components/AppImage";
 import AppKeyBoardAvoiding from "./src/components/KeyboardAvoidingView";
 import AppModal from "./src/components/AppModal";
+import AppPressable from "./src/components/Pressable";
 // import { ScrollView } from "react-native-web";
 // import { TextInput } from "react-native-web";
 
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <ScrollView style={styles.container}>
       <AppImage />
+      <AppPressable />
       <AppModal />
       <AppView />
       <AppFlatList />
