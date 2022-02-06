@@ -1,23 +1,17 @@
-import { StatusBar } from "expo-status-bar";
-import React, { useState } from "react";
-import {
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-  ScrollView,
-  SafeAreaView,
-} from "react-native";
-import AppView from "./src/components/View";
-import Home from "./src/components/Home";
+import React from "react";
+import { ScrollView, StyleSheet, View, SafeAreaView } from "react-native";
 import AppFlatList from "./src/components/AppFlatList";
 import AppImage from "./src/components/AppImage";
-import AppKeyBoardAvoiding from "./src/components/KeyboardAvoidingView";
 import AppModal from "./src/components/AppModal";
-import AppPressable from "./src/components/Pressable";
 import AppTextInput from "./src/components/AppTextInput";
+import AppKeyBoardAvoiding from "./src/components/KeyboardAvoidingView";
+import AppPressable from "./src/components/Pressable";
+import AppView from "./src/components/View";
 // import { ScrollView } from "react-native-web";
 // import { TextInput } from "react-native-web";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
