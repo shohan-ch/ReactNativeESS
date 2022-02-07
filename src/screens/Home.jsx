@@ -17,10 +17,10 @@ export default ({ navigation }) => {
       <AppFlatList />
       <AppKeyBoardAvoiding />
       <AppTextInput />
-      <View>
+      <View style={{ paddingBottom: 30 }}>
         <Button
           title="Go to Profile Screen"
-          onPress={() => navigation.navigate("Profile")}
+          onPress={() => navigation.navigate("Profile", { name: "Shohan" })}
         />
       </View>
     </ScrollView>
