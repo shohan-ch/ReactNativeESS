@@ -1,6 +1,6 @@
 import { Image, ImageBackground, Text, View } from "react-native";
 
-import img from "../assets/tiny_logo.png";
+import img from "../../assets/tiny_logo.png";
 
 export default () => {
   return (
@@ -24,7 +24,7 @@ export default () => {
           Hello text
         </Text>
         <Image
-          source={require("../assets/tiny_logo.png")}
+          source={require("../../assets/tiny_logo.png")}
           // source={{
           //   uri: "https://reactnative.dev/img/tiny_logo.png",
           // }}
