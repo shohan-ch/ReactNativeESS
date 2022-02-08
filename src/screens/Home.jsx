@@ -8,6 +8,8 @@ import AppPressable from "../components/home/Pressable";
 import AppView from "../components/home/View";
 
 export default ({ navigation }) => {
+
+
   return (
     <ScrollView style={styles.container}>
       <AppImage />

@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, Button, View, Text } from "react-native";
+import { Alert, Button, View, Text, TextInput } from "react-native";
 
 export default ({ navigation }) => {
   return (
@@ -10,6 +10,8 @@ export default ({ navigation }) => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cumque
         adipisci et illum nulla illo voluptates totam veniam autem fugiat.
       </Text>
+
+ <TextInput placeholder="Write something"/>
 
       <Button
         title="Go Home Screen From Child"

@@ -35,7 +35,7 @@ export default function App() {
 
             headerRight: () => (
               <Button
-                onPress={() => alert("This is a button!")}
+                onPress={() => alert("This is a button! text")}
                 title="Info"
                 color="indigo"
               />
