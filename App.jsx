@@ -4,7 +4,6 @@ import React from "react";
 import Home from "./src/screens/Home";
 import Profile from "./src/screens/Profile";
 import { Button } from "react-native";
-
 const Stack = createNativeStackNavigator();
 
 export default function App() {
